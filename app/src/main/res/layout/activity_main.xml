@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <LinearLayout android:id="@+id/brandHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingHorizontal="20dp" android:paddingVertical="12dp" android:background="@color/surface">
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_brand" android:importantForAccessibility="no"/>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:textSize="20sp" android:fontFamily="sans-serif-medium" android:textColor="@color/on_surface"/>
+            <TextView android:id="@+id/counterLabel" style="@style/Text.POS.Eyebrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/counter_label" android:textSize="11sp"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/demo_badge" android:textSize="11sp" android:textColor="@color/primary" android:fontFamily="sans-serif-medium" android:background="@drawable/bg_pill" android:paddingHorizontal="12dp" android:paddingVertical="7dp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/aboutButton" style="@style/Widget.POS.SmallButton" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="4dp" android:contentDescription="@string/about" app:icon="@drawable/ic_info" app:iconGravity="textStart" app:iconPadding="0dp" app:backgroundTint="@android:color/transparent"/>
+    </LinearLayout>
+    <View android:id="@+id/headerDivider" android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/outline"/>
+    <FrameLayout android:id="@+id/pageHost" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/navigation" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/surface" app:menu="@menu/bottom_navigation" app:itemIconTint="@color/primary" app:itemTextColor="@color/primary" app:labelVisibilityMode="labeled" app:itemActiveIndicatorStyle="@style/Widget.Material3.BottomNavigationView.ActiveIndicator"/>
+</LinearLayout>

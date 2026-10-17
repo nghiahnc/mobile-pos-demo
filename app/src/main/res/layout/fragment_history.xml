@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp">
+    <TextView android:id="@+id/historyEyebrow" style="@style/Text.POS.Eyebrow" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/history_eyebrow"/>
+    <TextView android:id="@+id/historyHeading" style="@style/Text.POS.Heading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/history_heading"/>
+    <com.google.android.material.card.MaterialCardView android:id="@+id/revenueCard" style="@style/Widget.POS.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" app:cardBackgroundColor="@color/soft_primary" app:strokeWidth="0dp">
+        <LinearLayout android:id="@+id/revenueContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView style="@style/Text.POS.Eyebrow" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/revenue_label"/>
+            <TextView android:id="@+id/revenue" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="36sp" android:textColor="@color/primary" android:fontFamily="sans-serif-medium" android:layout_marginTop="4dp"/>
+            <TextView android:id="@+id/successCount" style="@style/Text.POS.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            <TextView android:id="@+id/revenueNote" style="@style/Text.POS.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/revenue_note" android:textSize="12sp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <TextView android:id="@+id/recentLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recent_transactions" android:textSize="18sp" android:textColor="@color/on_surface" android:fontFamily="sans-serif-medium" android:layout_marginTop="24dp" android:layout_marginBottom="12dp"/>
+    <LinearLayout android:id="@+id/emptyHistory" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/history_empty" android:textSize="20sp" android:textColor="@color/on_surface" android:gravity="center"/>
+        <TextView style="@style/Text.POS.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/history_empty_detail" android:gravity="center" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/transactions" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:clipToPadding="false"/>
+</LinearLayout>

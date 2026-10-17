@@ -1,0 +1,10 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" style="@style/Widget.POS.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:clickable="true" android:focusable="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+            <TextView android:id="@+id/code" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textSize="15sp" android:fontFamily="sans-serif-medium" android:textColor="@color/on_surface"/>
+            <TextView android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:textColor="@color/primary" android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+        <TextView android:id="@+id/details" style="@style/Text.POS.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:layout_marginTop="8dp"/>
+        <TextView android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:paddingHorizontal="10dp" android:paddingVertical="6dp" android:background="@drawable/bg_pill" android:textColor="@color/primary" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

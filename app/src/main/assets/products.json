@@ -1,0 +1,14 @@
+[
+  {"id":"cf01","name":"Cà phê đen","category":"Cà phê","price":25000,"note":"Đậm vị, rang mộc"},
+  {"id":"cf02","name":"Cà phê sữa","category":"Cà phê","price":29000,"note":"Phin truyền thống"},
+  {"id":"cf03","name":"Bạc xỉu","category":"Cà phê","price":32000,"note":"Dịu nhẹ, nhiều sữa"},
+  {"id":"cf04","name":"Latte","category":"Cà phê","price":45000,"note":"Espresso & sữa tươi"},
+  {"id":"cf05","name":"Cold brew","category":"Cà phê","price":42000,"note":"Ủ lạnh 16 giờ"},
+  {"id":"te01","name":"Trà đào cam sả","category":"Trà trái cây","price":39000,"note":"Thanh mát, thơm sả"},
+  {"id":"te02","name":"Trà vải","category":"Trà trái cây","price":39000,"note":"Vải ngọt & trà lài"},
+  {"id":"te03","name":"Trà chanh","category":"Trà trái cây","price":29000,"note":"Chanh tươi mỗi ngày"},
+  {"id":"ot01","name":"Matcha latte","category":"Đồ uống khác","price":45000,"note":"Matcha & sữa tươi"},
+  {"id":"ot02","name":"Chocolate","category":"Đồ uống khác","price":42000,"note":"Cacao đậm, ít ngọt"},
+  {"id":"ca01","name":"Croissant","category":"Bánh ngọt","price":35000,"note":"Bơ thơm, vỏ giòn"},
+  {"id":"ca02","name":"Tiramisu","category":"Bánh ngọt","price":49000,"note":"Mềm mịn, vị cà phê"}
+]

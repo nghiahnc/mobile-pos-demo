@@ -1,0 +1,5 @@
+<resources>
+    <bool name="two_pane">false</bool>
+    <bool name="light_system_bars">true</bool>
+    <bool name="compact_height">false</bool>
+</resources>

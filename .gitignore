@@ -1,0 +1,55 @@
+# Dependencies, build output and machine-specific state
+node_modules/
+.next/
+.open-next/
+.wrangler/
+.gradle/
+.kotlin/
+.idea/
+.agents/
+.tools/
+.local/
+.backups/
+.vercel/
+.neon
+.DS_Store
+Thumbs.db
+**/build/
+target/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+*.iml
+local.properties
+captures/
+
+# Credentials and local environment (only sanitized examples are public)
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
+*.local
+*.log
+*.dump
+*.sql.gz
+*.pem
+*.key
+*.jks
+*.keystore
+
+# Deliverable archives and executables are built locally, not stored in Git
+*.apk
+*.aab
+*.zip
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Keep only reviewed documentation evidence from artifacts
+/artifacts/*
+!/artifacts/QA.md
+!/artifacts/preview.png
+!/artifacts/screenshots/
+/artifacts/screenshots/*
+!/artifacts/screenshots/*.png

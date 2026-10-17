@@ -1,0 +1,4 @@
+plugins {
+    id("com.android.application") version "9.1.0" apply false
+    id("com.google.devtools.ksp") version "2.3.9" apply false
+}
